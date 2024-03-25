@@ -1,0 +1,8 @@
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<body></head>
+			<h3>userdata.html</h3>
+			<b>전달받은 데이터</b>
+			<h4 th:text =${name} >날고기는 중요한 데이타</h4>
+		</body>
+</html>

@@ -1,0 +1,19 @@
+package com.example.demo.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class Controller1 {
+	@GetMapping("/userinfo")
+	public String userinfo() {
+		
+		return "/user/userinfo";
+	}
+	//데이타 전달요청
+	public String userdata(Model model) {//데이터 주머니
+		model.addAttribute("name","이순신");
+		return "/user/userdata";
+	}
+}
