@@ -1,0 +1,35 @@
+<html xmlns="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8">
+	<style>
+		h1 {
+			color: blue;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 th:text="${heading}">전달받은 값 출력</h1>
+	<h3>사용자가 입력한 도서정보</h3>
+	<table border="1" cellspacing="0">
+		<tr>
+			<td>Title</td>
+			<td th:text="${bookDTO.getBookTitle()}"></td>
+		</tr>
+		<tr>
+			<td>Author</td>
+			<td th:text="${bookDTO.getBookAuthor()}"></td>
+		</tr>
+		<tr>
+			<td>Publisher</td>
+			<td th:text="${bookDTO.getBookPublisher()}"></td>
+		</tr>
+		<tr>
+			<td>Price</td>
+			<td th:text="${bookDTO.getBookPrice()}"></td>
+		</tr>
+	</table>
+</body>
+
+</html>
